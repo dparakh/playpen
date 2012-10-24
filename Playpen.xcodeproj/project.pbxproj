@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		471C45E91595C21A00F7D9EB /* playpen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 471C45E81595C21A00F7D9EB /* playpen.mm */; };
+		471C45F71595C25B00F7D9EB /* colournames.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45EC1595C25B00F7D9EB /* colournames.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C45F81595C25B00F7D9EB /* fgw_text.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45ED1595C25B00F7D9EB /* fgw_text.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C45F91595C25B00F7D9EB /* flood_fill.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45EE1595C25B00F7D9EB /* flood_fill.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C45FA1595C25B00F7D9EB /* keyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45EF1595C25B00F7D9EB /* keyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C45FB1595C25B00F7D9EB /* line_drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45F01595C25B00F7D9EB /* line_drawing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C45FC1595C25B00F7D9EB /* minipng.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45F11595C25B00F7D9EB /* minipng.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C45FD1595C25B00F7D9EB /* mouse.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45F21595C25B00F7D9EB /* mouse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C45FE1595C25B00F7D9EB /* playpen.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45F31595C25B00F7D9EB /* playpen.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C45FF1595C25B00F7D9EB /* point2d.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45F41595C25B00F7D9EB /* point2d.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C46001595C25B00F7D9EB /* point2dx.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45F51595C25B00F7D9EB /* point2dx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		471C46011595C25B00F7D9EB /* shape.h in Headers */ = {isa = PBXBuildFile; fileRef = 471C45F61595C25B00F7D9EB /* shape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		474799751638086E00688AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 474799711638086E00688AC3 /* main.m */; };
+		474799761638086E00688AC3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474799721638086E00688AC3 /* MainMenu.xib */; };
+		474799771638086E00688AC3 /* TheCocoaAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 474799741638086E00688AC3 /* TheCocoaAppAppDelegate.m */; };
+		474799C216380B9E00688AC3 /* PlaypenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47764A0E1595D7A300891016 /* PlaypenController.m */; };
+		474799CA16380C0000688AC3 /* PlaypenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47764A101595D7A300891016 /* PlaypenView.m */; };
+		474799F516380FBB00688AC3 /* Playpen.app in Resources */ = {isa = PBXBuildFile; fileRef = 474799451638075100688AC3 /* Playpen.app */; };
+		47764A111595D7A300891016 /* CocoaPlaypenAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47764A0B1595D7A300891016 /* CocoaPlaypenAppDelegate.m */; };
+		47764A121595D7A300891016 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47764A0C1595D7A300891016 /* main.m */; };
+		47764A131595D7A300891016 /* PlaypenController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47764A0E1595D7A300891016 /* PlaypenController.m */; };
+		47764A141595D7A300891016 /* PlaypenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47764A101595D7A300891016 /* PlaypenView.m */; };
+		47764A151595D7AC00891016 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		479D89DE1595EBEB00F96B10 /* point2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 479D89DD1595EBEB00F96B10 /* point2d.cpp */; };
+		47A21E9D161BEB1000FBA82B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A21DDA161BEB0600FBA82B /* ApplicationServices.framework */; };
+		47A21E9F161BEB9900FBA82B /* keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47A21E9E161BEB9900FBA82B /* keyboard.cpp */; };
+		47A21EA0161BF15400FBA82B /* keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47A21E9E161BEB9900FBA82B /* keyboard.cpp */; };
+		47A21EA1161BF15900FBA82B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A21DDA161BEB0600FBA82B /* ApplicationServices.framework */; };
+		47CAA74515A2FE0F002330DE /* ShapeTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 47CAA74415A2FE0F002330DE /* ShapeTests.mm */; };
+		47CAA77115A300F7002330DE /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CFE33F159B0E940003C65B /* shape.cpp */; };
+		47CAA77B15A3014D002330DE /* point2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 479D89DD1595EBEB00F96B10 /* point2d.cpp */; };
+		47CAA77F15A30161002330DE /* playpen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 471C45E81595C21A00F7D9EB /* playpen.mm */; };
+		47CAA78315A30171002330DE /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D4B07115986E110085E227 /* utils.cpp */; };
+		47CAA7B415A30AEE002330DE /* JustTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CAA7B315A30AEE002330DE /* JustTest.cpp */; };
+		47CAA7B515A30B20002330DE /* point2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 479D89DD1595EBEB00F96B10 /* point2d.cpp */; };
+		47CAA7B615A30B27002330DE /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CFE33F159B0E940003C65B /* shape.cpp */; };
+		47CAA7B715A30B27002330DE /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D4B07115986E110085E227 /* utils.cpp */; };
+		47CAA7C115A30B9A002330DE /* playpen.mm in Sources */ = {isa = PBXBuildFile; fileRef = 471C45E81595C21A00F7D9EB /* playpen.mm */; };
+		47CAA7E115A30C42002330DE /* JustTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CAA7B315A30AEE002330DE /* JustTest.cpp */; };
+		47CFE340159B0E940003C65B /* shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47CFE33F159B0E940003C65B /* shape.cpp */; };
+		47D4B07315986E110085E227 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D4B07115986E110085E227 /* utils.cpp */; };
+		47FB16F715BEDF5E00796F4E /* flood_fill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47FB16F615BEDF5E00796F4E /* flood_fill.cpp */; };
+		47FB16F815BEDF5E00796F4E /* flood_fill.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47FB16F615BEDF5E00796F4E /* flood_fill.cpp */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		472FDAB115ADBDBE00A1E492 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47764A031595D78A00891016;
+			remoteInfo = TheWindowApp;
+		};
+		474799F616380FC700688AC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 474799441638075100688AC3 /* TheCocoaApp */;
+			remoteInfo = TheCocoaApp;
+		};
+		47479ADC16383CAC00688AC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 474799441638075100688AC3 /* TheCocoaApp */;
+			remoteInfo = TheCocoaApp;
+		};
+		47764A361595DAC700891016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47764A031595D78A00891016;
+			remoteInfo = TheWindowApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* Playpen_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playpen_Prefix.pch; sourceTree = "<group>"; };
+		471C45E81595C21A00F7D9EB /* playpen.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = playpen.mm; path = Classes/playpen.mm; sourceTree = SOURCE_ROOT; };
+		471C45EC1595C25B00F7D9EB /* colournames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = colournames.h; path = Headers/colournames.h; sourceTree = SOURCE_ROOT; };
+		471C45ED1595C25B00F7D9EB /* fgw_text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fgw_text.h; path = Headers/fgw_text.h; sourceTree = SOURCE_ROOT; };
+		471C45EE1595C25B00F7D9EB /* flood_fill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = flood_fill.h; path = Headers/flood_fill.h; sourceTree = SOURCE_ROOT; };
+		471C45EF1595C25B00F7D9EB /* keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = keyboard.h; path = Headers/keyboard.h; sourceTree = SOURCE_ROOT; };
+		471C45F01595C25B00F7D9EB /* line_drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = line_drawing.h; path = Headers/line_drawing.h; sourceTree = SOURCE_ROOT; };
+		471C45F11595C25B00F7D9EB /* minipng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = minipng.h; path = Headers/minipng.h; sourceTree = SOURCE_ROOT; };
+		471C45F21595C25B00F7D9EB /* mouse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mouse.h; path = Headers/mouse.h; sourceTree = SOURCE_ROOT; };
+		471C45F31595C25B00F7D9EB /* playpen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = playpen.h; path = Headers/playpen.h; sourceTree = SOURCE_ROOT; };
+		471C45F41595C25B00F7D9EB /* point2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point2d.h; path = Headers/point2d.h; sourceTree = SOURCE_ROOT; };
+		471C45F51595C25B00F7D9EB /* point2dx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = point2dx.h; path = Headers/point2dx.h; sourceTree = SOURCE_ROOT; };
+		471C45F61595C25B00F7D9EB /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shape.h; path = Headers/shape.h; sourceTree = SOURCE_ROOT; };
+		474799451638075100688AC3 /* Playpen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playpen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		474799711638086E00688AC3 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TheCocoaApp/main.m; sourceTree = SOURCE_ROOT; };
+		474799721638086E00688AC3 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = TheCocoaApp/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		474799731638086E00688AC3 /* TheCocoaAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheCocoaAppAppDelegate.h; path = TheCocoaApp/TheCocoaAppAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		474799741638086E00688AC3 /* TheCocoaAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheCocoaAppAppDelegate.m; path = TheCocoaApp/TheCocoaAppAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		47479978163808AD00688AC3 /* TheCocoaApp-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "TheCocoaApp-Info.plist"; path = "TheCocoaApp/TheCocoaApp-Info.plist"; sourceTree = SOURCE_ROOT; };
+		47479A841638363900688AC3 /* playpen_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = playpen_private.h; sourceTree = "<group>"; };
+		47764A041595D78A00891016 /* TheWindowApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TheWindowApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		47764A0A1595D7A300891016 /* CocoaPlaypenAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CocoaPlaypenAppDelegate.h; path = TheWindowApp/CocoaPlaypenAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		47764A0B1595D7A300891016 /* CocoaPlaypenAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CocoaPlaypenAppDelegate.m; path = TheWindowApp/CocoaPlaypenAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		47764A0C1595D7A300891016 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TheWindowApp/main.m; sourceTree = SOURCE_ROOT; };
+		47764A0D1595D7A300891016 /* PlaypenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaypenController.h; path = TheWindowApp/PlaypenController.h; sourceTree = SOURCE_ROOT; };
+		47764A0E1595D7A300891016 /* PlaypenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaypenController.m; path = TheWindowApp/PlaypenController.m; sourceTree = SOURCE_ROOT; };
+		47764A0F1595D7A300891016 /* PlaypenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaypenView.h; path = TheWindowApp/PlaypenView.h; sourceTree = SOURCE_ROOT; };
+		47764A101595D7A300891016 /* PlaypenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaypenView.m; path = TheWindowApp/PlaypenView.m; sourceTree = SOURCE_ROOT; };
+		479D89DD1595EBEB00F96B10 /* point2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = point2d.cpp; path = Classes/point2d.cpp; sourceTree = "<group>"; };
+		47A21DDA161BEB0600FBA82B /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		47A21E9E161BEB9900FBA82B /* keyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = keyboard.cpp; path = Classes/keyboard.cpp; sourceTree = "<group>"; };
+		47CAA73015A2FD5A002330DE /* PlaypenUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaypenUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CAA73115A2FD5A002330DE /* PlaypenUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlaypenUnitTests-Info.plist"; sourceTree = "<group>"; };
+		47CAA74315A2FE0F002330DE /* ShapeTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeTests.h; sourceTree = "<group>"; };
+		47CAA74415A2FE0F002330DE /* ShapeTests.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ShapeTests.mm; sourceTree = "<group>"; };
+		47CAA7AD15A30AB6002330DE /* JustTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JustTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CAA7B315A30AEE002330DE /* JustTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JustTest.cpp; sourceTree = "<group>"; };
+		47CFE33F159B0E940003C65B /* shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = shape.cpp; sourceTree = "<group>"; };
+		47D4B07115986E110085E227 /* utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		47FB16F615BEDF5E00796F4E /* flood_fill.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = flood_fill.cpp; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* Playpen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Playpen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		474799431638075100688AC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47764A021595D78A00891016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47764A151595D7AC00891016 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CAA72D15A2FD5A002330DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CAA7AB15A30AB6002330DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47A21EA1161BF15900FBA82B /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+				47A21E9D161BEB1000FBA82B /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* Playpen.framework */,
+				47764A041595D78A00891016 /* TheWindowApp */,
+				47CAA73015A2FD5A002330DE /* PlaypenUnitTests.octest */,
+				47CAA7AD15A30AB6002330DE /* JustTest */,
+				474799451638075100688AC3 /* Playpen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Playpen */ = {
+			isa = PBXGroup;
+			children = (
+				474799701638084600688AC3 /* TheCocoaApp */,
+				47764A081595D78F00891016 /* TheWindowApp */,
+				471C45EB1595C24A00F7D9EB /* Headers */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				47CAA74215A2FDDF002330DE /* Tests */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+				47CAA73115A2FD5A002330DE /* PlaypenUnitTests-Info.plist */,
+			);
+			name = Playpen;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				471C45E81595C21A00F7D9EB /* playpen.mm */,
+				479D89DD1595EBEB00F96B10 /* point2d.cpp */,
+				47A21E9E161BEB9900FBA82B /* keyboard.cpp */,
+				47479A841638363900688AC3 /* playpen_private.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+				47A21DDA161BEB0600FBA82B /* ApplicationServices.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* Playpen_Prefix.pch */,
+				47CFE33F159B0E940003C65B /* shape.cpp */,
+				47D4B07115986E110085E227 /* utils.cpp */,
+				47FB16F615BEDF5E00796F4E /* flood_fill.cpp */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		471C45EB1595C24A00F7D9EB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				471C45EC1595C25B00F7D9EB /* colournames.h */,
+				471C45ED1595C25B00F7D9EB /* fgw_text.h */,
+				471C45EE1595C25B00F7D9EB /* flood_fill.h */,
+				471C45EF1595C25B00F7D9EB /* keyboard.h */,
+				471C45F01595C25B00F7D9EB /* line_drawing.h */,
+				471C45F11595C25B00F7D9EB /* minipng.h */,
+				471C45F21595C25B00F7D9EB /* mouse.h */,
+				471C45F31595C25B00F7D9EB /* playpen.h */,
+				471C45F41595C25B00F7D9EB /* point2d.h */,
+				471C45F51595C25B00F7D9EB /* point2dx.h */,
+				471C45F61595C25B00F7D9EB /* shape.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		474799701638084600688AC3 /* TheCocoaApp */ = {
+			isa = PBXGroup;
+			children = (
+				47479978163808AD00688AC3 /* TheCocoaApp-Info.plist */,
+				474799711638086E00688AC3 /* main.m */,
+				474799721638086E00688AC3 /* MainMenu.xib */,
+				474799731638086E00688AC3 /* TheCocoaAppAppDelegate.h */,
+				474799741638086E00688AC3 /* TheCocoaAppAppDelegate.m */,
+			);
+			name = TheCocoaApp;
+			sourceTree = "<group>";
+		};
+		47764A081595D78F00891016 /* TheWindowApp */ = {
+			isa = PBXGroup;
+			children = (
+				47764A0A1595D7A300891016 /* CocoaPlaypenAppDelegate.h */,
+				47764A0B1595D7A300891016 /* CocoaPlaypenAppDelegate.m */,
+				47764A0C1595D7A300891016 /* main.m */,
+				47764A0D1595D7A300891016 /* PlaypenController.h */,
+				47764A0E1595D7A300891016 /* PlaypenController.m */,
+				47764A0F1595D7A300891016 /* PlaypenView.h */,
+				47764A101595D7A300891016 /* PlaypenView.m */,
+			);
+			name = TheWindowApp;
+			sourceTree = "<group>";
+		};
+		47CAA74215A2FDDF002330DE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				47CAA74315A2FE0F002330DE /* ShapeTests.h */,
+				47CAA74415A2FE0F002330DE /* ShapeTests.mm */,
+				47CAA7B315A30AEE002330DE /* JustTest.cpp */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471C45F71595C25B00F7D9EB /* colournames.h in Headers */,
+				471C45F81595C25B00F7D9EB /* fgw_text.h in Headers */,
+				471C45F91595C25B00F7D9EB /* flood_fill.h in Headers */,
+				471C45FA1595C25B00F7D9EB /* keyboard.h in Headers */,
+				471C45FB1595C25B00F7D9EB /* line_drawing.h in Headers */,
+				471C45FC1595C25B00F7D9EB /* minipng.h in Headers */,
+				471C45FD1595C25B00F7D9EB /* mouse.h in Headers */,
+				471C45FE1595C25B00F7D9EB /* playpen.h in Headers */,
+				471C45FF1595C25B00F7D9EB /* point2d.h in Headers */,
+				471C46001595C25B00F7D9EB /* point2dx.h in Headers */,
+				471C46011595C25B00F7D9EB /* shape.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		474799441638075100688AC3 /* TheCocoaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4747994A1638075100688AC3 /* Build configuration list for PBXNativeTarget "TheCocoaApp" */;
+			buildPhases = (
+				474799411638075100688AC3 /* Resources */,
+				474799421638075100688AC3 /* Sources */,
+				474799431638075100688AC3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheCocoaApp;
+			productName = TheCocoaApp;
+			productReference = 474799451638075100688AC3 /* Playpen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		47764A031595D78A00891016 /* TheWindowApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47764A091595D78F00891016 /* Build configuration list for PBXNativeTarget "TheWindowApp" */;
+			buildPhases = (
+				47764A011595D78A00891016 /* Sources */,
+				47764A021595D78A00891016 /* Frameworks */,
+				47764A1B1595D7E800891016 /* ConvertExeToH Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheWindowApp;
+			productName = TheWindowApp;
+			productReference = 47764A041595D78A00891016 /* TheWindowApp */;
+			productType = "com.apple.product-type.tool";
+		};
+		47CAA72F15A2FD5A002330DE /* PlaypenUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47CAA73415A2FD5A002330DE /* Build configuration list for PBXNativeTarget "PlaypenUnitTests" */;
+			buildPhases = (
+				47CAA72B15A2FD5A002330DE /* Resources */,
+				47CAA72C15A2FD5A002330DE /* Sources */,
+				47CAA72D15A2FD5A002330DE /* Frameworks */,
+				47CAA72E15A2FD5A002330DE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaypenUnitTests;
+			productName = PlaypenUnitTests;
+			productReference = 47CAA73015A2FD5A002330DE /* PlaypenUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		47CAA7AC15A30AB6002330DE /* JustTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47CAA7B115A30AD5002330DE /* Build configuration list for PBXNativeTarget "JustTest" */;
+			buildPhases = (
+				47CAA7AA15A30AB6002330DE /* Sources */,
+				47CAA7AB15A30AB6002330DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				472FDAB215ADBDBE00A1E492 /* PBXTargetDependency */,
+				47479ADD16383CAC00688AC3 /* PBXTargetDependency */,
+			);
+			name = JustTest;
+			productName = JustTest;
+			productReference = 47CAA7AD15A30AB6002330DE /* JustTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		8DC2EF4F0486A6940098B216 /* Playpen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Playpen" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47764A371595DAC700891016 /* PBXTargetDependency */,
+				474799F716380FC700688AC3 /* PBXTargetDependency */,
+			);
+			name = Playpen;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = Playpen;
+			productReference = 8DC2EF5B0486A6940098B216 /* Playpen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Playpen" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Playpen */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* Playpen */,
+				47764A031595D78A00891016 /* TheWindowApp */,
+				47CAA72F15A2FD5A002330DE /* PlaypenUnitTests */,
+				47CAA7AC15A30AB6002330DE /* JustTest */,
+				474799441638075100688AC3 /* TheCocoaApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		474799411638075100688AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474799761638086E00688AC3 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CAA72B15A2FD5A002330DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474799F516380FBB00688AC3 /* Playpen.app in Resources */,
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		47764A1B1595D7E800891016 /* ConvertExeToH Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "ConvertExeToH Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "VARNAME=\"gCocoaPlaypenImage\"\nOUTPUTHEADER=\"./cp_as_res.h\"\nTHEEXE=\"$TARGET_BUILD_DIR/$TARGETNAME\"\nif [ -f $THEEXE ]\nthen\n    echo \"static const unsigned char $VARNAME[] = {\" > $OUTPUTHEADER\n    od -t x1 -v $THEEXE | cut -s -f 5- -d \" \" | sed \"s/[[:alnum:]][[:alnum:]]/0x&,/g\" >> $OUTPUTHEADER\n    echo \"};\" >>$OUTPUTHEADER\n    echo \"Created $OUTPUTHEADER from $THEEXE\"\nfi\n";
+		};
+		47CAA72E15A2FD5A002330DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		474799421638075100688AC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474799751638086E00688AC3 /* main.m in Sources */,
+				474799771638086E00688AC3 /* TheCocoaAppAppDelegate.m in Sources */,
+				474799C216380B9E00688AC3 /* PlaypenController.m in Sources */,
+				474799CA16380C0000688AC3 /* PlaypenView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47764A011595D78A00891016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47764A111595D7A300891016 /* CocoaPlaypenAppDelegate.m in Sources */,
+				47764A121595D7A300891016 /* main.m in Sources */,
+				47764A131595D7A300891016 /* PlaypenController.m in Sources */,
+				47764A141595D7A300891016 /* PlaypenView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CAA72C15A2FD5A002330DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CAA74515A2FE0F002330DE /* ShapeTests.mm in Sources */,
+				47CAA77115A300F7002330DE /* shape.cpp in Sources */,
+				47CAA77B15A3014D002330DE /* point2d.cpp in Sources */,
+				47CAA77F15A30161002330DE /* playpen.mm in Sources */,
+				47CAA78315A30171002330DE /* utils.cpp in Sources */,
+				47CAA7B415A30AEE002330DE /* JustTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47CAA7AA15A30AB6002330DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CAA7B515A30B20002330DE /* point2d.cpp in Sources */,
+				47CAA7B615A30B27002330DE /* shape.cpp in Sources */,
+				47CAA7B715A30B27002330DE /* utils.cpp in Sources */,
+				47CAA7C115A30B9A002330DE /* playpen.mm in Sources */,
+				47CAA7E115A30C42002330DE /* JustTest.cpp in Sources */,
+				47FB16F815BEDF5E00796F4E /* flood_fill.cpp in Sources */,
+				47A21EA0161BF15400FBA82B /* keyboard.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471C45E91595C21A00F7D9EB /* playpen.mm in Sources */,
+				479D89DE1595EBEB00F96B10 /* point2d.cpp in Sources */,
+				47D4B07315986E110085E227 /* utils.cpp in Sources */,
+				47CFE340159B0E940003C65B /* shape.cpp in Sources */,
+				47FB16F715BEDF5E00796F4E /* flood_fill.cpp in Sources */,
+				47A21E9F161BEB9900FBA82B /* keyboard.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		472FDAB215ADBDBE00A1E492 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47764A031595D78A00891016 /* TheWindowApp */;
+			targetProxy = 472FDAB115ADBDBE00A1E492 /* PBXContainerItemProxy */;
+		};
+		474799F716380FC700688AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 474799441638075100688AC3 /* TheCocoaApp */;
+			targetProxy = 474799F616380FC700688AC3 /* PBXContainerItemProxy */;
+		};
+		47479ADD16383CAC00688AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 474799441638075100688AC3 /* TheCocoaApp */;
+			targetProxy = 47479ADC16383CAC00688AC3 /* PBXContainerItemProxy */;
+		};
+		47764A371595DAC700891016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47764A031595D78A00891016 /* TheWindowApp */;
+			targetProxy = 47764A361595DAC700891016 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Playpen_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = Playpen;
+				USER_HEADER_SEARCH_PATHS = ./Headers;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Playpen_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = Playpen;
+				USER_HEADER_SEARCH_PATHS = ./Headers;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		474799481638075100688AC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "TheCocoaApp/TheCocoaApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Playpen;
+			};
+			name = Debug;
+		};
+		474799491638075100688AC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "TheCocoaApp/TheCocoaApp-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Playpen;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		47764A061595D78A00891016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TheWindowApp;
+			};
+			name = Debug;
+		};
+		47764A071595D78A00891016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TheWindowApp;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		47CAA73215A2FD5A002330DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "PlaypenUnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PlaypenUnitTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		47CAA73315A2FD5A002330DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = "PlaypenUnitTests-Info.plist";
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Cocoa,
+					"-framework",
+					SenTestingKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = PlaypenUnitTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		47CAA7AF15A30AB7002330DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = JustTest;
+			};
+			name = Debug;
+		};
+		47CAA7B015A30AB7002330DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = JustTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Playpen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Playpen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4747994A1638075100688AC3 /* Build configuration list for PBXNativeTarget "TheCocoaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				474799481638075100688AC3 /* Debug */,
+				474799491638075100688AC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47764A091595D78F00891016 /* Build configuration list for PBXNativeTarget "TheWindowApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47764A061595D78A00891016 /* Debug */,
+				47764A071595D78A00891016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47CAA73415A2FD5A002330DE /* Build configuration list for PBXNativeTarget "PlaypenUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CAA73215A2FD5A002330DE /* Debug */,
+				47CAA73315A2FD5A002330DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47CAA7B115A30AD5002330DE /* Build configuration list for PBXNativeTarget "JustTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CAA7AF15A30AB7002330DE /* Debug */,
+				47CAA7B015A30AB7002330DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
