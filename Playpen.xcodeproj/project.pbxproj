@@ -55,25 +55,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		472FDAB115ADBDBE00A1E492 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 47764A031595D78A00891016;
-			remoteInfo = TheWindowApp;
-		};
 		474799F616380FC700688AC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 474799441638075100688AC3 /* TheCocoaApp */;
+			remoteGlobalIDString = 474799441638075100688AC3;
 			remoteInfo = TheCocoaApp;
 		};
 		47479ADC16383CAC00688AC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 474799441638075100688AC3 /* TheCocoaApp */;
+			remoteGlobalIDString = 474799441638075100688AC3;
 			remoteInfo = TheCocoaApp;
 		};
 		47764A361595DAC700891016 /* PBXContainerItemProxy */ = {
@@ -406,7 +399,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				472FDAB215ADBDBE00A1E492 /* PBXTargetDependency */,
 				47479ADD16383CAC00688AC3 /* PBXTargetDependency */,
 			);
 			name = JustTest;
@@ -587,11 +579,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		472FDAB215ADBDBE00A1E492 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 47764A031595D78A00891016 /* TheWindowApp */;
-			targetProxy = 472FDAB115ADBDBE00A1E492 /* PBXContainerItemProxy */;
-		};
 		474799F716380FC700688AC3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 474799441638075100688AC3 /* TheCocoaApp */;
