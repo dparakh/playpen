@@ -123,7 +123,7 @@ double direction(point2d location, point2d remote)
         //Either first or third quadrant
         
         //if in third quadrant, do some adjusting
-        if (deltay >= 0)
+        if (deltay > 0)
             result += 180;
     }
     else
